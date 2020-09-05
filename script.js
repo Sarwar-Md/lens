@@ -54,7 +54,7 @@ let photosArray = [];
 let apiUrl;
 let page = 1;
 let query;
-const API_KEY = `your_api_key`;
+const API_KEY = `Api_Key_Goes_Here`;
 const count = 10;
 const filteredNameValue = [];
 const defaultApi = `https://api.unsplash.com/photos/random?client_id=${API_KEY}&count=${count}`;
