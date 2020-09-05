@@ -1,6 +1,6 @@
 # LENS
 ## Demo
-![lens demo](lensDemo.gif)
+![](LensDemo.gif)
 
 This project is an extension of [javascript20-projects](https://github.com/zero-to-mastery/javascript20-projects) :Infinity Scroll
 ## How it works
