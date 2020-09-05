@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="style.css"> 
+
+    <title>Lens</title>
+</head>
+<body>
+    <nav>
+        <div class="menu-icon">
+  <span class="fas fa-bars"></span></div>
+  <div class="logo">LENS<br>
+    <span class='power'>Powered By<a href="https://unsplash.com/developers"> UnSplash</a></span> 
+  </div>
+  <div class="nav-items">      
+    <li id="filt"><a>Filters</a></li>
+    <div id="filters" class="hide">
+        <div class="selectbox">
+          <div>
+              <label for="color">Color</label>              
+              <select name="color" id="color">
+                <option value="" selected>Any</option>   
+                <option value="black_and_white">Black & White</option>
+                <option value="black">Black</option>
+                <option value="white">White</option>
+                <option value="yellow">yellow</option>
+                <option value="orange">Orange</option>
+                <option value="red">Red</option>
+                <option value="purple">Purple</option>
+                <option value="magenta">Magenta</option>
+                <option value="green">Green</option>
+                <option value="teal">Teal</option>
+                <option value="blue">Blue</option>                              
+              </select>
+          </div>
+          <div>
+              <label for="content_filter">Content Filter</label>
+              <select name="content_filter" id="content_filter">
+               <option value="low" selected>Low</option>
+               <option value="high">High</option>
+              </select>
+          </div>
+          <div>
+              <label for="order_by">Order By</label>
+              <select name="order_by" id="order_by">
+               <option value="relevant" selected>Relevant</option>
+               <option value="latest">Latest</option>
+              </select>
+          </div>
+          <div>
+              <label for="orientation">Orientation</label>
+              <select name="orientation" id="orientation">
+               <option value="" selected>Any</option>
+               <option value="landscape">Landscape</option>
+               <option value="portrait">Portrait</option>
+               <option value="squarish">Squarish</option>
+              </select>
+          </div>
+          <div><span class="caret">X</span></div>       
+        </div>        
+    </div>           
+  </div>
+  <div class="search-icon">
+  <span class="fas fa-search"></span></div>
+  <div class="cancel-icon">
+  <span class="fas fa-times"></span></div>
+  <form action="#">
+          <input type="search" class="search-data" placeholder="Search" required>
+          <button type="submit" class="fas fa-search" id="start_search"></button>
+  </form>  
+  </nav>
+
+  <!-- Loader -->
+    <div class="loader" id="loader">
+        <img src="loader.svg" alt="Loading">
+    </div>
+    <!-- Image Container -->
+    <div class="img-conatiner" id="img-container">
+        
+    </div>
+      
+  
+    <script src="script.js"></script>
+</body>
+</html>
